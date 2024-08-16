@@ -725,7 +725,7 @@ def boot_clouseau(ctx, idx):
     if not os.path.exists(logback_properties):
         generate_default_logback_properties(logback_properties)
 
-    classpath = separator.join([classpath, clouseau_dir]) # for logback.xml
+    classpath = separator.join([classpath, clouseau_dir])  # for logback.xml
 
     clouseau_name = "clouseau{}@127.0.0.1".format(idx)
     clouseau_indexes_dir = os.path.join(ctx["devdir"], "clouseau{}".format(idx), "data")
